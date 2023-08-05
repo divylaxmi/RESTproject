@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+    crossorigin="anonymous">
+     <link rel="icon" href="/static/images/knife.png" type="images/icon type" style="width: 70px; height: 70px;">
+    
+     <title>HOME</title>
+    <style>
+        footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color:white;
+   
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+footer ul a{
+    text-decoration: none;
+    color :white ;
+    font-size: .9em;
+    margin-left: 10px;
+    
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <a class="navbar-brand" href="#"><img src="/static/images/knife.png" width="50px" alt="">THE KNIFE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="HOME.HTML">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="MENU.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ABOUT.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="BOOK TABLE.html">Book Table</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Veg</a>
+          <a class="dropdown-item" href="#">Non veg</a>
+          <a class="dropdown-item" href="#">South Indian</a>
+          <a class="dropdown-item" href="#">North Indian</a>
+          <a class="dropdown-item" href="#">Desserts</a>
+          
+          
+        </div>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav>
+
+<section class="">
+    <div class="contain">
+      <div class="row">
+        <div class="col-md-6">
+
+<div class="container bg-info rounded mt-5 p-4">
+    <center>
+    <h1 class="text-danger" style="background-image: url(/project/images/reserved.jpg);">Reservation</h1>
+    <hr>
+    <h3 style="color: rgb(240, 17, 17);"><img src="/static/images/table.jpg" width="70px" height="80px" alt="">Book a table</h3>
+</center>
+    <form action="">
+        
+<div class="row">
+    <div class="col-md-12">
+        <label for="">Name</label>
+        <input class="form-control" type="text" name="name" placeholder="Enter the name">
+
+    </div>
+    
+    <div class="col-md-12">
+        <label for="">Email</label>
+        <input class="form-control" type="email" name="email" placeholder="Enter the email">
+
+    </div>
+
+    
+    <div class="col-md-12">
+        <label for="">Mobile</label>
+        <input class="form-control" type="text" name="mobile" placeholder="Enter the mobile">
+
+    </div>
+    
+        <div class="col-md-12">
+            <label for="">Date</label>
+            <input class="form-control" type="date" name="date" >
+
+        </div>
+        
+            <div class="col-md-12">
+                <label for="">Time</label>
+                <input class="form-control" type="time" name="time" >
+    
+            </div>
+
+    
+    <div class="col-md-12">
+        <label for="">Password</label>
+        <input class="form-control" type="password" name="password" placeholder="Enter the password">
+
+    </div>
+   
+        <div class="col-md-12">
+            <label for="">Address</label>
+            <input class="form-control" type="text" name="address" placeholder="Address">
+
+        </div>
+        <div class="form-group col-sm-12">
+          <a class="btn btn-primary btn-block" href="confirm.html">Book a Table</a>
+       </div>
+</div>
+</form>
+</div>
+</div>
+<div class="col-md-6">
+  <main class="page payment-page" style=" background-color:deepskyblue; width: 200px; width: auto; height:700px; ">
+    <section class="payment-form dark">
+      <div class="container">
+        <div class="block-heading">
+          <h1 style="margin-top: 20%; color:rgb(240, 17, 17);">Payment</h1>
+          
+        </div>
+        <form>
+          <div class="products">
+            <h3 class="title" style="color: rgb(240, 17, 17);">Checkout</h3>
+            <img src="images/t.c" alt="">
+            <div class="item">
+              <span class="price">320/-</span>
+              <p class="item-name">Tanduri chicken</p>
+              
+            </div>
+            
+          <div class="card-details">
+            <h3 class="title">Credit Card Details</h3>
+            <div class="row">
+              <div class="form-group col-sm-7">
+                <label for="card-holder">Card Holder</label>
+                <input id="card-holder" type="text" class="form-control" placeholder="Card Holder" aria-label="Card Holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-5">
+                <label for="">Expiration Date</label>
+                <div class="input-group expiration-date">
+                  <input type="text" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1">
+                  <span class="date-separator">/</span>
+                  <input type="text" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1">
+                </div>
+              </div>
+              <div class="form-group col-sm-8">
+                <label for="card-number">Card Number</label>
+                <input id="card-number" type="text" class="form-control" placeholder="Card Number" aria-label="Card Holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="cvc">CVC</label>
+                <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-12">
+                 <a class="btn btn-primary btn-block" href="order now.html">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+<footer>
+    <div class="left">
+        <h2>RESTAURANT</h2>
+        <h4><i><img src="/static/images/location.svg" alt=""></i>Address</h4>
+        <p>HDFC ATM,Near Mahadev Manda,Lower Chutia,Ranchi</p>
+    </div>
+    <div class="right">
+        <h3>site map</h3>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">MENU</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BOOK TABLE</a></li>
+        </ul>
+    </div>  
+</footer> 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</html>
